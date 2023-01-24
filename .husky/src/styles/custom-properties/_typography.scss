@@ -1,0 +1,102 @@
+// Typography
+
+// Font Family
+// ===========
+
+@mixin font-family {
+  --font-sans: 'Curator', ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI',
+    roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-serif: 'Selane Text', ui-serif, georgia, cambria, 'Times New Roman', times, serif;
+  --font-mono: ui-monospace, sfmono-regular, menlo, monaco, consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  --font-base: var(--font-serif);
+  --font-display: 'Selane Headline', var(--font-base);
+
+  // TODO: Remove legacy definitions.
+  --font-curator-regular: 'CuratorRegular', var(--font-sans);
+  --font-curator-bold: 'CuratorBold', var(--font-sans);
+  --font-curator-italic: 'CuratorItalic', var(--font-sans);
+  --font-curator-bold-italic: 'CuratorBoldItalic', var(--font-sans);
+  --font-selane-text-regular: 'SelaneTextRegular', var(--font-serif);
+  --font-selane-text-bold: 'SelaneTextBold', var(--font-serif);
+  --font-selane-text-italic: 'SelaneTextRegularItalic', var(--font-serif);
+  --font-selane-text-bold-talic: 'SelaneTextBoldItalic', var(--font-serif);
+  --font-selant-ten-italic: 'SelaneTenItalic', var(--font-serif);
+  --font-selane-twenty: 'SelaneTwenty', var(--font-serif);
+  --font-selane-forty: 'SelaneForty', var(--font-serif);
+}
+
+// Font Size
+// =========
+
+@mixin font-size {
+  --text-12: calc(12rem / 16); // 12px
+  --text-13: calc(13rem / 16); // 13px
+  --text-14: calc(14rem / 16); // 14px
+  --text-15: calc(15rem / 16); // 15px
+  --text-16: calc(16rem / 16); // 16px
+  --text-17: calc(17rem / 16); // 17px
+  --text-18: calc(18rem / 16); // 18px
+  --text-19: calc(19rem / 16); // 19px
+  --text-20: calc(20rem / 16); // 20px
+  --text-22: calc(22rem / 16); // 22px
+  --text-23: calc(23rem / 16); // 23px
+  --text-24: calc(24rem / 16); // 24px
+  --text-26: calc(26rem / 16); // 26px
+  --text-28: calc(28rem / 16); // 28px
+  --text-30: calc(30rem / 16); // 30px
+  --text-32: calc(32rem / 16); // 32px
+  --text-50: calc(50rem / 16); // 50px
+  --text-160: calc(160rem / 16); // 160px
+}
+
+// Font Weight
+// ===========
+
+@mixin font-weight {
+  --font-thin: 100;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+}
+
+// Line Height
+// ===========
+
+@mixin line-height {
+  --leading-21: calc(21rem / 16); // 21px
+  --leading-27: calc(27rem / 16); // 27px
+  --leading-30: calc(30rem / 16); // 30px
+  --leading-32: calc(32rem / 16); // 32px
+  --leading-tight: 1.3;
+  --leading-normal: 1.5;
+}
+
+// Text Color
+// ==========
+
+@mixin color {
+  --text-color-black: var(--color-black);
+  --text-color-12239a: var(--color-12239a);
+  --text-color-333333: var(--color-333333);
+}
+
+// Text Align
+// ==========
+
+@mixin text-align {
+  --text-center: center;
+}
+
+// Text Decoration
+// ===============
+
+@mixin text-decoration {
+  --no-underline: none;
+}

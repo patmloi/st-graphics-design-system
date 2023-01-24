@@ -1,0 +1,32 @@
+// Customization
+
+// FIXME: Global declarations not working.
+@use '/src/styles/_variables.scss' as *;
+
+// Colors
+// ======
+
+@mixin colors {
+  @each $key, $value in $colors {
+    --color-#{$key}: #{$value};
+  }
+
+  @each $color in $palette {
+    --color-#{$color}: ##{$color};
+  }
+}
+
+// Spacing
+// =======
+
+@mixin spacing {
+  @each $spacing in $spacings {
+    @if $spacing == 0 or $spacing == auto {
+      --spacing-#{$spacing}: #{$spacing};
+    } @else if $spacing == px {
+      --spacing-#{$spacing}: 1px;
+    } @else {
+      --spacing-#{$spacing}: calc(#{$spacing}rem / 16);
+    }
+  }
+}

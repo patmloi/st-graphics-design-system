@@ -1,0 +1,22 @@
+// Spacing
+
+// FIXME: Global declarations not working.
+@use '/src/styles/_variables.scss' as *;
+
+// Padding
+// =======
+
+@mixin padding {
+  @each $padding in $paddings {
+    --p-#{$padding}: var(--spacing-#{$padding});
+  }
+}
+
+// Margin
+// ======
+
+@mixin margin {
+  @each $margin in $margins {
+    --m-#{$margin}: var(--spacing-#{$margin});
+  }
+}

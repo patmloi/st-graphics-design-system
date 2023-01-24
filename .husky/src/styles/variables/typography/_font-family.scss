@@ -1,0 +1,26 @@
+@use '../customization/configuration' as *;
+
+$font-sans: 'Curator', ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI',
+  roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$font-serif: 'Selane Text', ui-serif, georgia, cambria, 'Times New Roman', times, serif !default;
+$font-mono: ui-monospace, sfmono-regular, menlo, monaco, consolas, 'Liberation Mono', 'Courier New',
+  monospace !default;
+
+// Display typefaces
+$font-selane-ten: 'Selane Ten', var(--#{$prefix}font-serif) !default;
+$font-selane-twenty: 'Selane Twenty', var(--#{$prefix}font-serif) !default;
+$font-selane-forty: 'Selane Forty', var(--#{$prefix}font-serif) !default;
+
+// TODO: Remove legacy definitions.
+$font-curator-regular: 'CuratorRegular', $font-sans !default;
+$font-curator-bold: 'CuratorBold', $font-sans !default;
+$font-curator-italic: 'CuratorItalic', $font-sans !default;
+$font-curator-bold-italic: 'CuratorBoldItalic', $font-sans !default;
+$font-selane-text-regular: 'SelaneTextRegular', $font-serif !default;
+$font-selane-text-bold: 'SelaneTextBold', $font-serif !default;
+$font-selane-text-italic: 'SelaneTextRegularItalic', $font-serif !default;
+$font-selane-text-bold-talic: 'SelaneTextBoldItalic', $font-serif !default;
+$font-selant-ten-italic: 'SelaneTenItalic', $font-selane-ten !default;
+$font-selane-twenty-regular: 'SelaneTwenty', $font-selane-twenty !default;
+$font-selane-forty-regular: 'SelaneForty', $font-selane-forty !default;

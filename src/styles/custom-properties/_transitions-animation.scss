@@ -1,0 +1,18 @@
+// Transitions & Animation
+
+// Transition Timing Function
+// ==========================
+
+@mixin transition-timing-function {
+  --ease-linear: linear; // cubic-bezier(0.0, 0.0, 1.0, 1.0)
+  --ease-in: ease-in; // cubic-bezier(0.42, 0, 1.0, 1.0)
+  --ease-out: ease-out; // cubic-bezier(0, 0, 0.58, 1.0)
+  --ease-in-out: ease-in-out; // cubic-bezier(0.42, 0, 0.58, 1.0)
+}
+
+// Transition Duration
+// ===================
+
+@mixin transition-duration {
+  --duration-150: 150ms;
+}

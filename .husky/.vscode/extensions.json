@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    // EditorConfig
+    "editorconfig.editorconfig",
+
+    // ESLint
+    "dbaeumer.vscode-eslint",
+
+    // Prettier
+    "esbenp.prettier-vscode",
+
+    // Stylelint
+    "stylelint.vscode-stylelint",
+
+    // Svelte
+    "svelte.svelte-vscode"
+  ]
+}

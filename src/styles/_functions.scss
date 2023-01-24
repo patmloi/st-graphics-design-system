@@ -1,0 +1,35 @@
+@use 'sass:math';
+@use 'sass:meta';
+
+/// Remove the unit of a number
+///
+/// @param {number} $number - Number to remove unit from
+/// @return {number} - Unitless number
+@function strip-unit($number) {
+  @if meta.type-of($number) != 'number' {
+    @error "Argument of type '#{meta.type-of($number)}' is not assignable to parameter of type 'number'.";
+  }
+
+  @if math.is-unitless($number) {
+    @return $number;
+  }
+
+  @return math.div($number, $number * 0 + 1);
+}
+
+/// Convert a pixel value to rem
+///
+/// @param {number} $number - Value in pixels or unitless
+/// @param {number} $root [16px] - Font size of the root element in pixels or unitless
+/// @return {number} - Value in rem
+@function px-to-rem($number, $root: 16px) {
+  @if meta.type-of($number) != 'number' {
+    @error "Argument of type '#{meta.type-of($number)}' is not assignable to parameter of type 'number'.";
+  }
+
+  @if meta.type-of($root) != 'number' {
+    @error "Argument of type '#{meta.type-of($root)}' is not assignable to parameter of type 'number'.";
+  }
+
+  @return math.div(strip-unit($number), strip-unit($root)) * 1rem;
+}

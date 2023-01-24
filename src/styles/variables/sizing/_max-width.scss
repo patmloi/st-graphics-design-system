@@ -1,0 +1,12 @@
+$max-w-0: 0 !default;
+$max-w-px: 1px !default; // TailwindCSS doesn’t define this.
+$max-w-none: none !default;
+$max-w-full: 100% !default;
+$max-w-screen: 100% !default; // TailwindCSS doesn’t define this.
+$max-w-small: 100svw !default; // TailwindCSS doesn’t define this.
+$max-w-large: 100lvw !default; // TailwindCSS doesn’t define this.
+$max-w-dynamic: 100dvw !default; // TailwindCSS doesn’t define this.
+$max-w-min: min-content !default;
+$max-w-max: max-content !default;
+$max-w-fit: fit-content !default;
+$max-w-prose: 65ch !default;

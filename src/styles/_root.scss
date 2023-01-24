@@ -1,0 +1,48 @@
+@use 'variables' as *;
+
+:root {
+  // Colors
+  // ======
+
+  @each $color, $value in $colors {
+    --st-#{$color}: #{$value};
+  }
+
+  // Typography
+  // ==========
+
+  // Font stack
+
+  --st-font-sans: #{$font-sans};
+  --st-font-serif: #{$font-serif};
+  --st-font-mono: #{$font-mono};
+
+  // Document
+  // ========
+
+  --st-border-width: #{$border-width};
+  --st-border-style: #{$border-style};
+  --st-border-color: #{$border-color};
+
+  // Selection
+  --st-selection-color: #{$selection-color};
+  --st-selection-background: #{$selection-background};
+
+  // Body
+  // ====
+
+  --st-body-font-family: #{$body-font-family};
+  --st-body-font-size: #{$body-font-size};
+  --st-body-font-weight: #{$body-font-weight};
+  --st-body-line-height: #{$body-line-height};
+  --st-body-color: #{$body-color};
+  --st-body-background: #{$body-background};
+
+  // Links & Anchors
+  // ===============
+
+  --st-link-color: #{$link-color};
+  --st-link-text-decoration-color: #{$link-text-decoration-color};
+  --st-link-hover-color: #{$link-hover-color};
+  --st-link-hover-text-decoration-color: #{$link-hover-text-decoration-color};
+}

@@ -1,0 +1,19 @@
+@mixin text-inherit {
+  color: inherit;
+}
+
+@mixin text-current {
+  color: currentcolor;
+}
+
+@mixin text-transparent {
+  color: transparent;
+}
+
+@mixin text-black {
+  color: black;
+}
+
+@mixin text-white {
+  color: white;
+}

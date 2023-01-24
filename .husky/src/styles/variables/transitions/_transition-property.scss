@@ -1,0 +1,8 @@
+$transition-none: none !default;
+$transition-all: all !default;
+$transition: color, background-color, border-color, text-decoration-color, fill, stroke, opacity,
+  box-shadow, transform, filter, backdrop-filter !default;
+$transition-colors: color, background-color, border-color, text-decoration-color, fill, stroke !default;
+$transition-opacity: opacity !default;
+$transition-shadow: box-shadow !default;
+$transition-transform: transform !default;

@@ -1,0 +1,317 @@
+@use 'functions' as *;
+
+// Prefix for :root CSS custom properties
+
+$prefix: st- !default;
+
+// Colors
+// ======
+
+// Main
+
+$black: #000 !default;
+$white: #fff !default;
+$blue: #0c2b57 !default;
+$news: #ef4123 !default;
+$links: #12239a !default;
+$premium: #13fdfd !default;
+
+// Neutrals
+
+$dark-gray: #727f8d !default;
+$medium-gray: #9da6b0 !default;
+$light-gray: #eff3f4 !default;
+$screen: var(--st-light-gray) !default;
+$buttons: #8891cc !default;
+$light-blue: #b1c4e6 !default;
+
+// Sections
+
+$sport: #fa8303 !default;
+$highlight: #f6e202 !default;
+$business: #7cef4c !default;
+$international: #1ea2f6 !default;
+$feature: #591bd3 !default;
+$life: #fa146e !default;
+
+// Color map
+
+$colors: (
+  'black': $black,
+  'white': $white,
+  'blue': $blue,
+  'news': $news,
+  'links': $links,
+  'premium': $premium,
+  'dark-gray': $dark-gray,
+  'medium-gray': $medium-gray,
+  'light-gray': $light-gray,
+  'screen': $screen,
+  'buttons': $buttons,
+  'light-blue': $light-blue,
+  'sport': $sport,
+  'highlight': $highlight,
+  'business': $business,
+  'international': $international,
+  'feature': $feature,
+  'life': $life,
+) !default;
+
+// Typography
+// ==========
+
+// Font stack
+
+$font-sans: 'Curator', ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI',
+  roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$font-serif: 'Selane Text', ui-serif, georgia, cambria, 'Times New Roman', times, serif !default;
+$font-mono: ui-monospace, sfmono-regular, menlo, monaco, consolas, 'Liberation Mono', 'Courier New',
+  monospace !default;
+
+// Display typefaces
+
+$font-selane-ten: 'Selane Ten', var(--st-font-serif) !default;
+$font-selane-twenty: 'Selane Twenty', var(--st-font-serif) !default;
+$font-selane-forty: 'Selane Forty', var(--st-font-serif) !default;
+
+// Font weight
+
+$font-thin: 100 !default;
+$font-extralight: 200 !default;
+$font-light: 300 !default;
+$font-normal: 400 !default;
+$font-medium: 500 !default;
+$font-semibold: 600 !default;
+$font-bold: 700 !default;
+$font-extrabold: 800 !default;
+$font-black: 900 !default;
+
+// Breakpoints
+// ===========
+
+$screen-sm: 420px !default;
+$screen-md: 768px !default;
+$screen-lg: 960px !default;
+$screen-xl: 1200px !default;
+
+// Spacing
+// =======
+
+$spacing-x: px-to-rem(16) !default;
+$md-spacing-x: px-to-rem(10) !default;
+
+// Document
+// ========
+
+$border-width: 1px !default;
+$border-style: solid !default;
+$border-color: #b4b4b4 !default;
+
+// Selection
+$selection-color: var(--st-black) !default;
+$selection-background: #fed402 !default;
+
+// Body
+// ====
+
+$body-font-family: var(--st-font-serif) !default;
+$body-font-size: px-to-rem(20) !default;
+$body-font-weight: $font-normal !default;
+$body-line-height: 1.35 !default;
+$body-color: var(--st-black) !default;
+$body-background: var(--st-white) !default;
+
+// Links & Anchors
+// ===============
+
+$link-color: var(--st-links) !default;
+$link-text-decoration-color: transparent !default;
+$link-hover-color: var(--st-link-color) !default;
+$link-hover-text-decoration-color: currentcolor !default;
+
+// Navbar
+// ======
+
+$navbar-border-bottom-width: var(--st-border-width) !default;
+
+// Brand
+$navbar-brand-color: var(--st-blue) !default;
+
+// Toggler
+$navbar-toggler-lines-color: currentcolor !default;
+$navbar-toggler-circle-color: rgb(255 255 255 / 50%) !default;
+
+// Social
+$navbar-social-circle-border-color: #b2b2b2 !default;
+$navbar-social-circle-background: transparent !default;
+$navbar-social-circle-opacity: 1 !default;
+$navbar-social-icon-color: var(--st-black) !default;
+
+// Header
+// ======
+
+$header-color: inherit !default;
+$header-text-align: inherit !default;
+$header-link-color: var(--st-link-color) !default;
+$header-link-hover-color: var(--header-link-color) !default;
+
+// Headline
+$headline-color: inherit !default;
+$headline-span-color: var(--st-news) !default;
+
+// Deck
+$deck-color: #494949 !default;
+
+// Byline & Dateline
+$byline-color: #616161 !default;
+
+// Bullets
+// =======
+
+$bullets-color: inherit !default;
+$bullets-text-align: inherit !default;
+$bullets-list-style: disc !default;
+
+// Facebook Post
+// =============
+
+$fb-post-max-width: px-to-rem(500) !default;
+
+// Figure
+// ======
+
+$figure-max-width: initial !default;
+$figure-caption-color: #7b7b7b !default;
+
+// Graph Title
+// ===========
+
+$graphtitle-color: inherit !default;
+$graphtitle-text-align: inherit !default;
+
+// Paragraph
+// =========
+
+$paragraph-color: inherit !default;
+$paragraph-text-align: inherit !default;
+$paragraph-dropcap-color: inherit !default;
+
+// Pullout
+// =======
+
+$pullout-color: inherit !default;
+$pullout-text-align: inherit !default;
+$pullout-heading-color: inherit !default;
+
+// Read More
+// =========
+
+$read-more-color: inherit !default;
+$read-more-background: var(--st-screen) !default;
+$read-more-link-color: var(--st-link-color) !default;
+$read-more-link-hover-color: var(--read-more-link-color) !default;
+
+// Scrolly
+// =======
+
+$scrolly-section-color: var(--st-black) !default;
+$scrolly-section-background: var(--st-white) !default;
+$scrolly-section-link-color: var(--st-link-color) !default;
+$scrolly-section-link-hover-color: var(--scrolly-section-link-color) !default;
+$scrolly-section-span-color: inherit !default;
+$scrolly-section-span-background: transparent !default;
+
+// Subheading
+// ==========
+
+$subheading-color: inherit !default;
+$subheading-text-align: inherit !default;
+$subheading-span-color: inherit !default;
+
+// Level 2
+$subheading-2-color: $subheading-color !default;
+$subheading-2-span-color: $subheading-span-color !default;
+
+// Level 3
+$subheading-3-color: $subheading-color !default;
+$subheading-3-span-color: $subheading-span-color !default;
+
+// Level 4
+$subheading-4-color: $subheading-color !default;
+$subheading-4-span-color: $subheading-span-color !default;
+
+// Tweet
+// =====
+
+$tweet-max-width: px-to-rem(500) !default;
+
+// Credits
+// =======
+
+$credits-color: #666 !default;
+$credits-border-color: #ccc !default;
+$credits-label-color: inherit !default;
+$credits-link-color: var(--st-link-color) !default;
+$credits-link-hover-color: var(--credits-link-color) !default;
+
+// Related
+// =======
+
+$related-color: var(--st-black) !default;
+$related-heading-color: inherit !default;
+$related-link-color: var(--st-link-color) !default;
+$related-link-hover-color: var(--related-link-color) !default;
+$related-thumbnail-aspect-ratio: '5/3' !default;
+
+// TODO: Remove the following legacy definitions.
+
+// Spacing
+// =======
+
+$outer-spacing-mobile: px-to-rem(16);
+$outer-spacing: px-to-rem(10);
+
+// Typography
+// ==========
+
+$font-curator-regular: 'CuratorRegular', var(--#{$prefix}font-sans) !default;
+$font-curator-bold: 'CuratorBold', var(--#{$prefix}font-sans) !default;
+$font-curator-italic: 'CuratorItalic', var(--#{$prefix}font-sans) !default;
+$font-curator-bold-italic: 'CuratorBoldItalic', var(--#{$prefix}font-sans) !default;
+$font-selane-text-regular: 'SelaneTextRegular', var(--#{$prefix}font-serif) !default;
+$font-selane-text-bold: 'SelaneTextBold', var(--#{$prefix}font-serif) !default;
+$font-selane-text-italic: 'SelaneTextRegularItalic', var(--#{$prefix}font-serif) !default;
+$font-selane-text-bold-talic: 'SelaneTextBoldItalic', var(--#{$prefix}font-serif) !default;
+$font-selant-ten-italic: 'SelaneTenItalic', $font-selane-ten !default;
+$font-selane-twenty-regular: 'SelaneTwenty', $font-selane-twenty !default;
+$font-selane-forty-regular: 'SelaneForty', $font-selane-forty !default;
+
+// Mixins
+// ======
+
+@mixin container() {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin grid-template($col) {
+  display: grid;
+  grid-template-columns: repeat($col, 1fr);
+  column-gap: px-to-rem(20);
+
+  & > * {
+    display: block;
+    margin-bottom: px-to-rem(20);
+  }
+
+  @supports (row-gap: 20px) {
+    row-gap: px-to-rem(20);
+
+    & > * {
+      margin-bottom: 0;
+    }
+  }
+
+  // @include photo-grid-ie($col, 1fr, 20px);
+}

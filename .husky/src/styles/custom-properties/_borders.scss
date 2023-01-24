@@ -1,0 +1,24 @@
+// Borders
+
+// Border Color
+// ============
+@mixin border-color {
+  --border-current: var(--color-current);
+  --border-transparent: var(--color-transparent);
+  --border-color-12239a: var(--color-12239a);
+  --border-color-b4b4b4: var(--color-b4b4b4);
+}
+
+// Border Style
+// ============
+
+@mixin border-style {
+  --border-solid: solid;
+  --border-dotted: dotted;
+}
+
+// Border Width
+// ============
+@mixin border-width {
+  --border: 1px;
+}

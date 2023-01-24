@@ -1,0 +1,21 @@
+# Top-most EditorConfig file.
+root = true
+
+[*]
+# Use UTF-8 as default character set encoding when reading and writing files.
+charset = utf-8
+
+# Use Unix-like EOL character.
+end_of_line = lf
+
+# Indent lines with soft tabs.
+indent_style = space
+
+# Use two spaces as default indent size.
+indent_size = 2
+
+# Trim trailing whitespace when saving a file.
+trim_trailing_whitespace = true
+
+# Insert a final new line at the end of the file when saving it.
+insert_final_newline = true

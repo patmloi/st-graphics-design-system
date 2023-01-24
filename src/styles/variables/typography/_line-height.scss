@@ -1,0 +1,7 @@
+@use '../../functions' as *;
+
+@function leading($size) {
+  @return px-to-rem($size);
+}
+
+$leading-normal: 1.3 !default;

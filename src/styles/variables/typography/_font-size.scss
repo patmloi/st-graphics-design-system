@@ -1,0 +1,31 @@
+@use '../../functions' as *;
+
+@function text($size) {
+  @return px-to-rem($size);
+}
+
+// $text-12: calc(12rem / 16) !default; // 12px
+// $text-13: calc(13rem / 16) !default; // 13px
+// $text-14: calc(14rem / 16) !default; // 14px
+// $text-15: calc(15rem / 16) !default; // 15px
+// $text-16: calc(16rem / 16) !default; // 16px
+// $text-17: calc(17rem / 16) !default; // 17px
+// $text-18: calc(18rem / 16) !default; // 18px
+// $text-19: calc(19rem / 16) !default; // 19px
+// $text-20: calc(20rem / 16) !default; // 20px
+// $text-22: calc(22rem / 16) !default; // 22px
+// $text-23: calc(23rem / 16) !default; // 23px
+// $text-24: calc(24rem / 16) !default; // 24px
+// $text-26: calc(26rem / 16) !default; // 26px
+// $text-28: calc(28rem / 16) !default; // 28px
+// $text-30: calc(30rem / 16) !default; // 30px
+// $text-32: calc(32rem / 16) !default; // 32px
+// $text-50: calc(50rem / 16) !default; // 50px
+// $text-160: calc(160rem / 16) !default; // 160px
+// $text-75p: 75% !default;
+// $text-80p: 80% !default;
+// $text-100p: 100% !default;
+// $text-1em: 1em !default;
+// $text-2em: 2em !default;
+// $text-2-95em: 2.95em !default;
+$text-base: text(20) !default;

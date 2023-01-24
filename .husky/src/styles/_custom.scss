@@ -1,0 +1,56 @@
+// Custom styles.
+footer {
+    position: relative;
+    background-color: #fff;
+}
+
+[data-type='bullets'] {
+  &.inverse {
+    --bullets-color: var(--st-white);
+  }
+}
+
+[data-type='paragraph'] {
+  &.inverse {
+    --paragraph-color: var(--st-white);
+  }
+}
+
+[data-type='pullout'] {
+  &.inverse {
+    --pullout-color: var(--st-white);
+  }
+}
+
+[data-type='subheading'],
+[data-type='subtitle'] {
+  &.inverse {
+    --subheading-color: var(--st-white);
+  }
+}
+
+// Photoscrolly component styles
+[data-type='photoscrolly'] {
+    padding: 0 !important;
+    margin: 0;
+  }
+
+.photoscrolly {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    img.picture.portrait {
+        min-width: min-content;
+        max-width: max-content;
+        min-height: fill-available;
+    }
+
+    img.picture.portrait.bottom {
+        bottom: 0;
+    }
+
+    img.picture.bottom {
+        position: absolute;
+        bottom: 0;    
+    }
+}

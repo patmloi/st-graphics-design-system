@@ -1,0 +1,11 @@
+$h-0: 0 !default;
+$h-px: 1px !default;
+$h-auto: auto !default;
+$h-full: 100% !default;
+$h-screen: 100vh !default;
+$h-small: 100svh !default; // TailwindCSS doesn’t define this.
+$h-large: 100lvh !default; // TailwindCSS doesn’t define this.
+$h-dynamic: 100dvh !default; // TailwindCSS doesn’t define this.
+$h-min: min-content !default;
+$h-max: max-content !default;
+$h-fit: fit-content !default;

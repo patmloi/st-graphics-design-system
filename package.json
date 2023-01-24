@@ -1,0 +1,151 @@
+{
+  "name": "svelte-starter-v4",
+  "version": "0.0.0",
+  "private": true,
+  "description": "ST Digital Graphics Svelte Starter.",
+  "homepage": "https://bitbucket.org/st-graphics/svelte-starter-v4",
+  "bugs": {
+    "url": "https://bitbucket.org/st-graphics/svelte-starter-v4/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/st-graphics/svelte-starter-v4.git"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+    "deploy": "NODE_ENV=staging vite build --mode staging && deploy-assets dist -p -t dev",
+    "deploy:prod": "vite build && deploy-assets dist -p -t prod -c",
+    "deploy:qa": "NODE_ENV=staging vite build --mode staging && deploy-assets dist -p -t qa",
+    "dev": "vite dev",
+    "prepare": "husky install",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "lint-staged": {
+    "*.{css,html,scss,svelte}": "stylelint --fix",
+    "*.{cjs,js,svelte,ts}": "eslint --cache --fix",
+    "*.{cjs,css,html,js,md,scss,svelte,ts}": "prettier --write",
+    "package.json": [
+      "sort-package-json",
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "pluginSearchDirs": [
+      "."
+    ],
+    "plugins": [
+      "prettier-plugin-svelte"
+    ],
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.svelte",
+        "options": {
+          "parser": "svelte"
+        }
+      }
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2017": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "svelte3"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "*.svelte"
+        ],
+        "processor": "svelte3/svelte3"
+      }
+    ],
+    "root": true
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard-scss",
+      "stylelint-config-recess-order",
+      "stylelint-config-prettier-scss",
+      "stylelint-config-html"
+    ],
+    "rules": {
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global"
+          ]
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "@sveltejs/svelte-scroller": "^2.0.7",
+    "iframe-resizer": "^4.3.2"
+  },
+  "devDependencies": {
+    "@st-graphics/backend": "^0.1.75",
+    "@storybook/addon-essentials": "^7.0.0-beta.32",
+    "@storybook/addon-interactions": "^7.0.0-beta.32",
+    "@storybook/addon-links": "^7.0.0-beta.32",
+    "@storybook/blocks": "^7.0.0-beta.32",
+    "@storybook/svelte": "^7.0.0-beta.32",
+    "@storybook/sveltekit": "^7.0.0-beta.32",
+    "@storybook/testing-library": "^0.0.13",
+    "@sveltejs/adapter-static": "^1.0.0",
+    "@sveltejs/kit": "^1.0.1",
+    "@zerodevx/svelte-img": "^1.2.3",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "marked": "^4.2.4",
+    "postcss": "^8.4.20",
+    "postcss-font-magician": "^3.0.0",
+    "postcss-html": "^1.5.0",
+    "postcss-load-config": "^4.0.1",
+    "prettier": "^2.8.1",
+    "prettier-plugin-svelte": "^2.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.57.1",
+    "sort-package-json": "^1.57.0",
+    "storybook": "^7.0.0-beta.32",
+    "stylelint": "^14.16.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-recess-order": "^3.1.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "svelte": "^3.55.0",
+    "svelte-check": "^3.0.1",
+    "svelte-preprocess": "^4.10.7",
+    "sveltekit-embed": "^0.0.5",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.3"
+  },
+  "engines": {
+    "node": ">=16.11.0",
+    "npm": ">=8.0.0"
+  }
+}

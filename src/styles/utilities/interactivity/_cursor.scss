@@ -1,0 +1,143 @@
+@mixin cursor-auto {
+  cursor: auto;
+}
+
+@mixin cursor-default {
+  cursor: default;
+}
+
+@mixin cursor-pointer {
+  cursor: pointer;
+}
+
+@mixin cursor-wait {
+  cursor: wait;
+}
+
+@mixin cursor-text {
+  cursor: text;
+}
+
+@mixin cursor-move {
+  cursor: move;
+}
+
+@mixin cursor-help {
+  cursor: help;
+}
+
+@mixin cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+@mixin cursor-none {
+  cursor: none;
+}
+
+@mixin cursor-context-menu {
+  cursor: context-menu;
+}
+
+@mixin cursor-progress {
+  cursor: progress;
+}
+
+@mixin cursor-cell {
+  cursor: cell;
+}
+
+@mixin cursor-crosshair {
+  cursor: crosshair;
+}
+
+@mixin cursor-vertical-text {
+  cursor: vertical-text;
+}
+
+@mixin cursor-alias {
+  cursor: alias;
+}
+
+@mixin cursor-copy {
+  cursor: copy;
+}
+
+@mixin cursor-no-drop {
+  cursor: no-drop;
+}
+
+@mixin cursor-grab {
+  cursor: grab;
+}
+
+@mixin cursor-grabbing {
+  cursor: grabbing;
+}
+
+@mixin cursor-all-scroll {
+  cursor: all-scroll;
+}
+
+@mixin cursor-col-resize {
+  cursor: col-resize;
+}
+
+@mixin cursor-row-resize {
+  cursor: row-resize;
+}
+
+@mixin cursor-n-resize {
+  cursor: n-resize;
+}
+
+@mixin cursor-e-resize {
+  cursor: e-resize;
+}
+
+@mixin cursor-s-resize {
+  cursor: s-resize;
+}
+
+@mixin cursor-w-resize {
+  cursor: w-resize;
+}
+
+@mixin cursor-ne-resize {
+  cursor: ne-resize;
+}
+
+@mixin cursor-nw-resize {
+  cursor: nw-resize;
+}
+
+@mixin cursor-se-resize {
+  cursor: se-resize;
+}
+
+@mixin cursor-sw-resize {
+  cursor: sw-resize;
+}
+
+@mixin cursor-ew-resize {
+  cursor: ew-resize;
+}
+
+@mixin cursor-ns-resize {
+  cursor: ns-resize;
+}
+
+@mixin cursor-nesw-resize {
+  cursor: nesw-resize;
+}
+
+@mixin cursor-nwse-resize {
+  cursor: nwse-resize;
+}
+
+@mixin cursor-zoom-in {
+  cursor: zoom-in;
+}
+
+@mixin cursor-zoom-out {
+  cursor: zoom-out;
+}

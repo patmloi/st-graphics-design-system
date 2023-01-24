@@ -1,0 +1,1 @@
+<span>By <slot /></span>

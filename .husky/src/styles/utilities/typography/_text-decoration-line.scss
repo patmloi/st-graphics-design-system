@@ -1,0 +1,15 @@
+@mixin underline {
+  text-decoration-line: underline;
+}
+
+@mixin overline {
+  text-decoration-line: overline;
+}
+
+@mixin line-through {
+  text-decoration-line: line-through;
+}
+
+@mixin no-underline {
+  text-decoration-line: none;
+}

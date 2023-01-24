@@ -1,0 +1,8 @@
+// Backgrounds
+
+// Background Color
+// ================
+@mixin background-color {
+  --bg-color-white: var(--color-white);
+  --bg-color-fed402: var(--color-fed402);
+}
