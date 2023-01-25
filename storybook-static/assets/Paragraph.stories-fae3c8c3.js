@@ -1,0 +1,2 @@
+import{S as i,i as l,s as c,r as d,u as m,v as p,w as h,x as _,d as o,a as u,y as f,z as n}from"./index-b5e67418.js";function v(r){let e,a;return{c(){e=d("h1"),a=m("Test")},l(t){e=p(t,"H1",{});var s=h(e);a=_(s,"Test"),s.forEach(o)},m(t,s){u(t,e,s),f(e,a)},p:n,i:n,o:n,d(t){t&&o(e)}}}class x extends i{constructor(e){super(),l(this,e,null,v,c,{})}}x.__docgen={version:3,name:"Paragraph.stories.svelte",data:[],computed:[],methods:[],components:[],description:null,keywords:[],events:[],slots:[],refs:[]};export{x as default};
+//# sourceMappingURL=Paragraph.stories-fae3c8c3.js.map

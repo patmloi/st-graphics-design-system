@@ -12,6 +12,8 @@
 
   const getImages = (link) =>
     get(nextGenImages)[link] ? get(nextGenImages)[link] : get(nextGenImages)['placeholder.jpg']
+
+  console.log(get(nextGenImages)['news/news-1.jpg'])
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight bind:scrollY />

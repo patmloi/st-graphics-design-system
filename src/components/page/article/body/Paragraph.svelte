@@ -2,7 +2,7 @@
   import { bool, md } from '$utils'
 
   export let value
-
+  console.log(value)
   let hasDropcap = false
   export { hasDropcap as hasdropcap }
 
